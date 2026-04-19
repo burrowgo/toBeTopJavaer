@@ -1,0 +1,33 @@
+---
+title: "Outline Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Outline Mind Map](/mind-map-en/outline.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/outline.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[To Be Top Javaer]
+
+Root --> B[Basics]
+Root --> UP[Underlying Principles]
+Root --> I[Intermediate Section]
+Root --> A[Advanced Section]
+Root --> Arch[Architecture]
+Root --> E[Expansion Section]
+```
+
+</details>

@@ -1,0 +1,70 @@
+---
+title: "Extensions Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Extensions Mind Map](/mind-map-en/extensions.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/extensions.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[Expansion Section]
+
+%% Artificial Intelligence
+Root --> AI[Artificial Intelligence]
+AI --> AI1[Math Foundations]
+AI --> AI2[ML / ANN / Deep Learning]
+AI --> AI3[Application Scenarios]
+AI --> AI_FW[Common Frameworks: TensorFlow, DeepLearning4J]
+
+%% Technology Trends
+Root --> Tech[Trends: IoT, Quantum Computing, AR & VR]
+
+%% Other Languages
+Root --> Lang[Other Languages: Groovy, Python, Go, NodeJs, Swift, Rust]
+
+%% Cloud Computing
+Root --> Cloud[Cloud Computing]
+Cloud --> C1[IaaS / SaaS / PaaS]
+Cloud --> C2[Virtualization: openstack]
+Cloud --> C3[Serverless]
+
+%% Search & Security
+Root --> Search[Search Engine: Solr, Lucene, Nutch, Elasticsearch]
+Root --> Perm[Permission Management: Shiro]
+
+%% Blockchain
+Root --> BC[Blockchain]
+BC --> BC_Fund[Foundations]
+BC_Fund --> BCF1[Hash / Merkle Tree / Public-key]
+BC_Fund --> BCF2[Consensus: Raft, Paxos, Byzantine]
+BC_Fund --> BCF3[MAC & Digital Signature]
+BC --> BC_Plat[Platforms & Crypto]
+BC_Plat --> BCP1[Bitcoin: Mining, Consensus, Lightning, Forks]
+BC_Plat --> BCP2[Hyperledger & Ethereum]
+
+%% Resources
+Root --> Books[Recommended Books]
+Books --> B1[JVM, Effective Java, JMM, Concurrency]
+Books --> B2[Architecture, Design Patterns, Maven]
+Books --> B3[Linux, Paxos to Zookeeper]
+    
+Root --> Social[Social & Community]
+Social --> S1[WeChat Official Account]
+Social --> S2[Knowledge Planet]
+Social --> S3[GitHub: hollischuang/toBeTopJavaer]
+```
+
+</details>

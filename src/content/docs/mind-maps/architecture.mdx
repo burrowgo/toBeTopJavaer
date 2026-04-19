@@ -1,0 +1,85 @@
+---
+title: "Architecture Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Architecture Mind Map](/mind-map-en/architecture.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/architecture.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[Architecture]
+
+%% Microservices
+Root --> Micro[Microservices]
+Micro --> M1[SOA]
+Micro --> M2[Conway's Law]
+Micro --> M3[Service Mesh: sidecar]
+Micro --> M4[Docker & Kubernetes]
+Micro --> M5[Spring Boot & Spring Cloud]
+
+%% High Concurrency
+Root --> HC[High Concurrency]
+HC --> HC1[Sharding]
+HC --> HC2[CDN Technology]
+HC --> HC3[Message Queue: ActiveMQ]
+
+%% Monitoring
+Root --> Mon[Monitoring]
+Mon --> Mon_Target[What to Monitor]
+Mon_Target --> MT1[CPU / Memory]
+Mon_Target --> MT2[Disk / Network I/O]
+Mon --> Mon_Method[Monitoring Methods]
+Mon_Method --> MM1[Process / Semantic]
+Mon_Method --> MM2[Machine Resource / Data Fluctuation]
+Mon --> Mon_Data[Data Collection: Logs, Instrumentation]
+Mon --> Mon_Tool[Dapper]
+
+%% Load Balancing
+Root --> LB[Load Balancing]
+LB --> LB_Tools[Tools]
+LB_Tools --> LBT1[Tomcat / Nginx]
+LB_Tools --> LBT2[L4 / L7 Load Balancing]
+
+%% DNS & CDN
+Root --> DNS[DNS: Principles & Design]
+Root --> CDN[CDN: Data Consistency]
+
+%% Distributed Systems
+Root --> DS[Distributed Systems]
+DS --> DS_Gov[Governance & Consistency]
+DS_Gov --> DSG1[Data Consistency]
+DS_Gov --> DSG2[Service Governance & Degradation]
+DS --> DS_Trans[Distributed Transactions]
+DS_Trans --> DST1[2PC / 3PC / CAP / BASE]
+DS_Trans --> DST2[Reliable Messaging / Best-effort / TCC]
+DS --> DS_Dubbo[Dubbo]
+DS_Dubbo --> DUB1[Registration & Discovery]
+DS_Dubbo --> DUB2[Service Governance]
+DS_Dubbo --> DUB3[Link: dubbo.apache.org]
+DS --> DS_DB[Distributed Database]
+DS_DB --> DDB1[How & When to Build]
+DS_DB --> DDB2[Tools: mycat, otter, HBase]
+DS --> DS_FS[Distributed File System: mfs, fastdfs]
+DS --> DS_Cache[Distributed Cache]
+DS_Cache --> DSC1[Consistency / Hit Rate / Redundancy]
+DS --> DS_Limit[Rate Limiting & Degradation: Hystrix, Sentinel]
+DS --> DS_Algo[Algorithms]
+DS_Algo --> DSA1[Consensus: Raft, Paxos]
+DS_Algo --> DSA2[Byzantine Problem]
+DS_Algo --> DSA3[2PC / 3PC]
+```
+
+</details>

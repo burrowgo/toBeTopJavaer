@@ -1,0 +1,62 @@
+---
+title: "Lower Level Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Lower Level Mind Map](/mind-map-en/lower-level.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/lower-level.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[Underlying Principles]
+
+%% JVM
+Root --> JVM[JVM]
+JVM --> JVM_Mem[JVM Memory Structure]
+JVM_Mem --> JMM1[Class File Format]
+JVM_Mem --> JMM2[Runtime Data Area: Heap, Stack, Method, Direct, RCP]
+JVM_Mem --> JMM3[Heap vs Stack & Escape Analysis]
+JVM --> JVM_Model[Java Memory Model]
+JVM_Model --> JM1[MESI / Cache Consistency]
+JVM_Model --> JM2[Visibility, Atomicity, Ordering]
+JVM_Model --> JM3[happens-before / Memory Barrier]
+JVM_Model --> JM4[Keywords: synchronized, volatile, final, Lock]
+JVM --> JVM_GC[Garbage Collection]
+JVM_GC --> GC1[Algorithms: Mark-Sweep, Copy, Compact, Generational]
+JVM_GC --> GC2[Collectors: CMS, G1, ZGC, Epsilon]
+JVM_GC --> GC3[Parameters & Survival Check]
+JVM --> JVM_Tune[Parameters & Tuning: Xmx, Xmn, Xms, Xss, etc.]
+JVM --> JVM_HotSpot[HotSpot, oop-klass, Object Header, JIT]
+
+%% Troubleshooting Tools
+Root --> Tools[Monitoring & Troubleshooting Tools]
+Tools --> T1[Basic: jps, jstack, jmap, jstat, jinfo, jhat]
+Tools --> T2[Analysis: jconsole, javap, btrace, TProfiler, Arthas]
+
+%% Class Loading
+Root --> CL[Class Loading Mechanism]
+CL --> CL1[ClassLoader & Loading Process]
+CL --> CL2[Parent Delegation & How to Break It]
+CL --> CL3[Modularity: Jigsaw, OSGi, jboss modules]
+
+%% Compilation and Decompilation
+Root --> Comp[Compilation & Decompilation]
+Comp --> C1[Front-end vs Back-end Compilation]
+Comp --> C2[JIT Optimizations: Escape Analysis, Stack Alloc, Scalar Replace]
+Comp --> C3[Decompilation & Tools: javap, jad, CRF]
+Comp --> C4[Compilation Tool: javac]
+```
+
+</details>

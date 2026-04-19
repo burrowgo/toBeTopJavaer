@@ -1,0 +1,103 @@
+---
+title: "Basics Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Basics Mind Map](/mind-map-en/basics.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/basics.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[Basics]
+
+%% Object-Oriented
+Root --> OO[Object-Oriented]
+OO --> OO_Concepts[Concepts & Characteristics]
+OO_Concepts --> OOC1[Procedure-Oriented vs Object-Oriented]
+OO_Concepts --> OOC2[3 Characteristics & 5 Principles]
+OO --> OO_Platform[Platform Independence]
+OO_Platform --> OOP1[JVM Mechanism]
+OO_Platform --> OOP2[Kotlin, Groovy, Scala, etc.]
+OO --> OO_Features[Features]
+OO_Features --> OOF1[Pass by Value vs Reference]
+OO_Features --> OOF2[Encapsulation, Inheritance, Polymorphism]
+OO_Features --> OOF3[Method Overriding & Overloading]
+OO_Features --> OOF4[Constructors & Variables Scope]
+
+%% Java Basic Knowledge
+Root --> JBK[Java Basic Knowledge]
+JBK --> Data[Data Types & Boxing]
+Data --> D1[Basic Types: Int, Float, Bool, Char]
+Data --> D2[Ranges: byte, short, int, long]
+Data --> D3[Floating-point & Money Issues]
+Data --> D4[Autoboxing/Unboxing & Integer Cache]
+JBK --> String[String]
+String --> S1[Immutability & String Pool]
+String --> S2[JDK 6 vs 7 substring / replace]
+String --> S3[Concatenation & + Overloading]
+String --> S4[intern & Constant Pools]
+JBK --> Keywords[Keywords: transient, instanceof, volatile, synchronized, final, static, const]
+JBK --> Collections[Collection Classes]
+Collections --> C1[ArrayList, LinkedList, Vector]
+Collections --> C2[HashMap, HashTable, ConcurrentHashMap]
+Collections --> C3[Set vs List & Duplicate Removal]
+Collections --> C4[Java 8 Stream & Utilities]
+Collections --> C5[fail-fast / fail-safe & CopyOnWrite]
+JBK --> Enum[Enum: Usage, Impl, Singleton, Serial, Thread Safety]
+JBK --> IO[IO Models]
+IO --> IO1[Stream: Byte vs Character / Input vs Output]
+IO --> IO2[Sync/Async, Block/Non-block]
+IO --> IO3[5 Linux Models / BIO, NIO, AIO]
+IO --> IO4[Netty]
+JBK --> Advanced[Reflect, Proxy, Serial]
+Advanced --> ADV1[Reflection & Factory Pattern]
+Advanced --> ADV2[Proxy: Static vs Dynamic / AOP]
+Advanced --> ADV3[Serialization: Principles, protobuf, Security]
+JBK --> Annotation[Annotation: Meta, Custom, Java/Spring Usage]
+JBK --> Message[JMS & JMX]
+JBK --> Generics[Generics: Erasure, Wildcards, extends/super]
+JBK --> Testing[Unit Testing: junit, mock, mockito, h2]
+JBK --> Utils[Utils & Others]
+Utils --> U1[Regex, API & SPI]
+Utils --> U2[Exception Handling & try-with-resources]
+Utils --> U3[Time: Zones, API, Java 8, SimpleDateFormat Issues]
+Utils --> U4[Encoding: Unicode, UTF-8, GBK, Endianness]
+Utils --> U5[Syntactic Sugar: Lambdas, for-each, etc.]
+
+%% Reading Source Code
+Root --> Source[Reading Source Code]
+Source --> S_Basic[String, Integer, Long, Enum, BigDecimal]
+Source --> S_Collections[List, Map, Set Implementations]
+Source --> S_Advanced[ThreadLocal, ClassLoader]
+
+%% Java Concurrent Programming
+Root --> Conc[Java Concurrent Programming]
+Conc --> C_Basic[Concurrency vs Parallelism]
+C_Basic --> CB1[Virtual Threads - Project Loom]
+Conc --> C_Thread[Thread: States, Priority, Daemon, Lifecycle]
+Conc --> C_Pool[Thread Pool: submit vs execute, Executors Issues]
+Conc --> C_Safety[Thread Safety: Deadlock, Memory Model]
+Conc --> C_Lock[Lock]
+C_Lock --> CL1[CAS, Optimistic vs Pessimistic]
+C_Lock --> CL2[Biased, Lightweight, Heavyweight]
+C_Lock --> CL3[Optimization: Elimination, Coarsening, Spin]
+Conc --> C_Sync[synchronized & volatile]
+C_Sync --> CS1[synchronized Impl & Atomicity]
+C_Sync --> CS2[volatile: happens-before, Memory Barrier]
+Conc --> C_Methods[Methods: sleep/wait, notify/notifyAll, ThreadLocal]
+Conc --> C_Pkg[Concurrency Package: Atomic*, Semaphore, CountDownLatch, etc.]
+```
+
+</details>

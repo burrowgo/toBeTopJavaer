@@ -1,0 +1,74 @@
+---
+title: "Intermediate Roadmap"
+---
+
+import { Card, LinkButton } from '@astrojs/starlight/components';
+
+<Card title="Interactive Roadmap">
+  ![Intermediate Mind Map](/mind-map-en/intermediate.svg)
+</Card>
+
+<div style="margin-top: 2rem;">
+  <LinkButton href="/mind-map-en/intermediate.png" target="_blank" icon="external">
+    View High-Resolution PNG (10,000px)
+  </LinkButton>
+</div>
+
+<details>
+<summary>View Mermaid Source</summary>
+
+```mermaid
+graph LR
+ 
+Root[Intermediate Section]
+
+%% Java Underlying Knowledge
+Root --> Underlying[Java Underlying Knowledge]
+Underlying --> UN1[Bytecode & Class File Format]
+Underlying --> UN2[CPU Cache: L1/L2/L3 & Sharing]
+Underlying --> UN3[Tail Recursion]
+Underlying --> UN4[Bitwise Operations: Add, Sub, Mul, Div, Mod]
+
+%% Design Patterns
+Root --> Patterns[Design Patterns]
+Patterns --> P1[23 Design Patterns Overview]
+Patterns --> P2[Common: Singleton, Strategy, Factory, Adapter, Chain of Responsibility]
+Patterns --> P_Impl[Implementations]
+P_Impl --> PI1[AOP / IOC]
+PI2[Thread-safe Singleton without sync/Lock]
+P_Impl --> PI3[NIO & Reactor Patterns]
+
+%% Network Programming
+Root --> Net[Network Programming]
+Net --> Net_Prot[Protocols: TCP, UDP, HTTP, HTTPS]
+Net_Prot --> NP1[TCP: 3-way Handshake / 4-way Termination]
+Net_Prot --> NP2[Flow & Congestion Control / OSI Model]
+Net_Prot --> NP3[TCP Sticky Packets & Unpacking]
+Net --> HTTP[HTTP: 1.0, 1.1, 2, 3]
+Net --> JavaNet[Java Network: RMI, Socket, HttpClient, Cookie/Session]
+Net --> ServerBuild[Servers: Static HTTP, Nginx, Apache, FTP, SMTP]
+Net --> Infrastructure[Infrastructure: CDN, DNS, Reverse/Forward Proxy]
+
+%% Frameworks
+Root --> FW[Frameworks]
+FW --> Servlet[Servlet: Lifecycle, Filter/Listener, web.xml]
+FW --> Hibernate[Hibernate: ORM, Caching, Lazy Loading, vs MyBatis]
+FW --> Spring[Spring: Bean Init, AOP Principles, IOC/DI Ways]
+FW --> MVC[Spring MVC vs Struts MVC]
+FW --> Boot[Spring Boot: 3.x, GraalVM Native, Observability]
+FW --> Jakarta[Jakarta EE Transition: javax to jakarta]
+FW --> Security[Spring Security]
+FW --> Cloud[Spring Cloud]
+Cloud --> SC1[Discovery: Eureka, ZK, Consul]
+Cloud --> SC2[Load Balancing: Feign, LoadBalancer]
+Cloud --> SC3[Config / Hystrix / Dapper / Gateway]
+
+%% Application Servers & Tools
+Root --> AppServers[Application Servers: Tomcat, Jetty, JBoss, WebLogic]
+Root --> Tools[Tools]
+Tools --> T1[Git / SVN]
+Tools --> T2[Maven / Gradle]
+Tools --> T3[IntelliJ IDEA & Plugins]
+```
+
+</details>
