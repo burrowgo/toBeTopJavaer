@@ -14,7 +14,7 @@ If it is **asynchronous**, B does not guarantee immediate execution upon receivi
 
 Synchronous/Asynchronous describes the **callee**.
 
-[Blocking/Non-blocking](/basics/java-basic/block-vs-non-blocking) describes the **caller**.
+[Blocking/Non-blocking](/toBeTopJavaer/basics/java-basic/block-vs-non-blocking) describes the **caller**.
 
 Synchronous does not necessarily mean blocking, and asynchronous does not necessarily mean non-blocking. There is no inevitable relationship.
 

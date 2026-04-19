@@ -13,7 +13,7 @@ If it is non-blocking, A does not need to wait after making the call and can do 
 
 ### Difference between Synchronous/Asynchronous and Blocking/Non-blocking
 
-[Synchronous and Asynchronous](/basics/java-basic/synchronized-vs-asynchronization) describe the callee.
+[Synchronous and Asynchronous](/toBeTopJavaer/basics/java-basic/synchronized-vs-asynchronization) describe the callee.
 
 Blocking and non-blocking describe the caller.
 

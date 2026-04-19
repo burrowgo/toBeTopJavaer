@@ -33,9 +33,9 @@ Hollis, Alibaba technical expert, 51CTO columnist, CSDN blog expert, Juejin outs
 
 Follow the author's official account; you can leave messages in the background.
 
-![](/contact/wechat-hollis.jpg)
+![](/toBeTopJavaer/contact/wechat-hollis.jpg)
 
-*Looking for the latest version? Check out our [Roadmaps (Mind Maps)](/mind-maps/outline) section.*
+*Looking for the latest version? Check out our [Roadmaps (Mind Maps)](/toBeTopJavaer/mind-maps/outline) section.*
 
 ### Open Source & Contribution
 

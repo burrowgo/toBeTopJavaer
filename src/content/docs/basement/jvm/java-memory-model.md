@@ -4,7 +4,7 @@ title: "Java Memory Model"
 
 ## Java Memory Model
 
-> This article is part of the [Road to Becoming a Java God series](/catalog/catalog), focusing on some introductions to the JVM.
+> This article is part of the [Road to Becoming a Java God series](/toBeTopJavaer/catalog/catalog), focusing on some introductions to the JVM.
 > 
 > Continuously updating.
 

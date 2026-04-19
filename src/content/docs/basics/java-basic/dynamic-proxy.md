@@ -2,7 +2,7 @@
 title: "Dynamic Proxy"
 ---
 
-Previously, we introduced [Static Proxy](/basics/java-basic/static-proxy). While the static proxy pattern is very useful, it has certain limitations. For instance, it requires developers to write a significant amount of boilerplate code, which is a waste of time and energy. When a class has many methods or when multiple objects need to be proxied simultaneously, the complexity increases substantially.
+Previously, we introduced [Static Proxy](/toBeTopJavaer/basics/java-basic/static-proxy). While the static proxy pattern is very useful, it has certain limitations. For instance, it requires developers to write a significant amount of boilerplate code, which is a waste of time and energy. When a class has many methods or when multiple objects need to be proxied simultaneously, the complexity increases substantially.
 
 Is there a method that doesn't require developers to manually write proxy classes? That's where **Dynamic Proxy** comes in.
 

@@ -36,7 +36,7 @@ The Builder Pattern includes the following roles:
 >
 > Product: Product role (`Role`)
 
-![Builder](/mind-map-en/architecture.svg)
+![Builder](/toBeTopJavaer/mind-map-en/architecture.svg)
 
 Here, we use the example of designing characters. For ease of understanding, we only create two characters: a common character and a super character. They both have methods such as setting head, face, body, HP value, MP value, and SP value. It is worth noting that setting the face depends on setting the head, and there must be a sequence.
 

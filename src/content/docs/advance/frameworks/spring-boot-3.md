@@ -12,7 +12,7 @@ title: "Spring Boot 3.x"
 Spring Boot 3.x baseline was moved to Java 17 to take advantage of modern language features like Records, Sealed Classes, and improved performance. It also fully supports **Java 21 (LTS)** and its Virtual Threads.
 
 ### 2. Jakarta EE Transition
-As detailed in the [Jakarta EE Transition](/advance/frameworks/jakarta-ee-transition) section, Spring Boot 3 moved from `javax.*` to `jakarta.*` for all Enterprise APIs. This affects:
+As detailed in the [Jakarta EE Transition](/toBeTopJavaer/advance/frameworks/jakarta-ee-transition) section, Spring Boot 3 moved from `javax.*` to `jakarta.*` for all Enterprise APIs. This affects:
 - Servlet API (Tomcat 10.1+, Jetty 11+)
 - JPA (Hibernate 6.1+)
 - Bean Validation (Hibernate Validator 7.0+)

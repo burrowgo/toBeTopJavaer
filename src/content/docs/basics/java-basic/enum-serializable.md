@@ -2,7 +2,7 @@
 title: "Enum Serializable"
 ---
 
-> Preface: Java SE5 introduced a new type - [Java Enum type](/archives/195), where the `enum` keyword can create a new type from a finite set of named values, which can be used as regular program components. This is a very useful feature. This article will deeply analyze the source code of enums to see how they are implemented, how they ensure thread safety, and why using enums to implement singletons is the best way.
+> Preface: Java SE5 introduced a new type - [Java Enum type](/toBeTopJavaer/archives/195), where the `enum` keyword can create a new type from a finite set of named values, which can be used as regular program components. This is a very useful feature. This article will deeply analyze the source code of enums to see how they are implemented, how they ensure thread safety, and why using enums to implement singletons is the best way.
 
 <!--more-->
 
@@ -18,7 +18,7 @@ SPRING, SUMMER, AUTUMN, WINTER;
 }
 ```
 
-Then we use decompilation to see how this code is implemented. After [Java decompilation](/archives/58), the code content is as follows:
+Then we use decompilation to see how this code is implemented. After [Java decompilation](/toBeTopJavaer/archives/58), the code content is as follows:
 
 ```java
 public final class T extends Enum
@@ -85,7 +85,7 @@ ENUM$VALUES = (new T[] {
 }
 ```
 
-These are all `static` types because `static` attributes are initialized after the class is loaded. As we introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/archives/199) and [Java Class Loading, Linking, and Initialization](/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.
+These are all `static` types because `static` attributes are initialized after the class is loaded. As we introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/toBeTopJavaer/archives/199) and [Java Class Loading, Linking, and Initialization](/toBeTopJavaer/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.
 
 ### Why Singleton Implemented with Enums is the Best Way
 
@@ -133,4 +133,4 @@ Therefore, **the JVM guarantees serialization.**
 
 **3. Enum Instance Creation is Thread-Safe**
 
-> As introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/archives/199) and [Java Class Loading, Linking, and Initialization](/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.
+> As introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/toBeTopJavaer/archives/199) and [Java Class Loading, Linking, and Initialization](/toBeTopJavaer/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.

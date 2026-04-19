@@ -14,7 +14,7 @@ SPRING, SUMMER, AUTUMN, WINTER;
 }
 ```
 
-Then we use decompilation to see how this code is implemented. After [Java decompilation](/archives/58), the code content is as follows:
+Then we use decompilation to see how this code is implemented. After [Java decompilation](/toBeTopJavaer/archives/58), the code content is as follows:
 
 ```java
 public final class T extends Enum
@@ -81,4 +81,4 @@ ENUM$VALUES = (new T[] {
 }
 ```
 
-These are all `static` types because `static` attributes are initialized after the class is loaded. As we introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/archives/199) and [Java Class Loading, Linking, and Initialization](/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.
+These are all `static` types because `static` attributes are initialized after the class is loaded. As we introduced in [Deep Analysis of Java ClassLoader Mechanism (Source Code Level)](/toBeTopJavaer/archives/199) and [Java Class Loading, Linking, and Initialization](/toBeTopJavaer/archives/201), static resources are initialized when a Java class is first truly used, and the loading and initialization process of Java classes are thread-safe. Therefore, **creating an enum type is thread-safe**.
