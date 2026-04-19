@@ -12,7 +12,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: View on GitHub
-      link: https://github.com/hollischuang/toBeTopJavaer
+      link: https://github.com/burrowgo/toBeTopJavaer
       icon: external
 ---
 
@@ -39,4 +39,4 @@ Follow the author's official account; you can leave messages in the background.
 
 ### Open Source & Contribution
 
-This project is licensed under the **GPL** agreement. If you have suggestions or want to contribute, please visit our [GitHub Repository](https://github.com/hollischuang/toBeTopJavaer).
+This project is licensed under the **GPL** agreement. If you have suggestions or want to contribute, please visit our [GitHub Repository](https://github.com/burrowgo/toBeTopJavaer).

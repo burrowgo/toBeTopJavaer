@@ -8,7 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'Java Engineer\'s Road to Mastery',
 			social: [
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/hollischuang/toBeTopJavaer' }
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/burrowgo/toBeTopJavaer' }
 			],
 			sidebar: [
 				{
